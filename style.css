@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.qoute-box {
+    margin: 18% auto;
+    height: auto;
+    text-align: center;
+    width: 40vw;
+    background-color: white;
+    border-radius: 17px;
+    color: black;
+}
+
+.qoute-box h1 {
+    margin-bottom: 52px;
+    font-size: 33px;
+}
+
+.qoute-box h1::after{
+    content: '';
+  width: 102px;
+  height: 3px;
+  position: absolute;
+  background-color: blue;
+  margin-top: 35px;
+  transform: translateX(-206%);
+}
+
+.qoute-box blockquote{
+    min-height: 81px;
+}
+
+.qoute-box blockquote::before ,.qoute-box blockquote::after{
+    content: '"';
+}
+
+
+.qoute-box span{
+    display: block;
+    float: right;
+    margin-top: -2vw;
+}
+
+.qoute-box span::before{
+    content: '';
+  width: 46px;
+  height: 4px;
+  background-color: aqua;
+  position: absolute;
+  margin-left: -50px;
+  margin-top: 6px;
+}
+div button{
+    padding: 2px 2px;
+    padding: 4px 11px;
+  cursor: pointer;
+  background-color: lightskyblue;
+  border-radius: 12px;
+  border: 1px solid lightblue
+}
+
+div button img{
+    width: 13px;
+  margin-right: 4px;
+}
+
+.qoute-box div button:nth-child(2){
+    background-color: white;
+}
